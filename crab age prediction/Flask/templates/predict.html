@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Prediction page</h1>
+    </header>
+    <main>
+        <h2>Welcome to Crab Age Prediction</h2>
+    
+        <p>Prediction</p>
+        <form method="POST" id="prediction-form" action="/submit"> <!-- Added action attribute for form submission -->
+            <label for="sw">Shell Weight:</label><br><br>
+            <input type="number" id="sw" name="sw" min="0" required>
+            <br><br>
+            <label for="l">Length:</label><br><br>
+            <input type="number" id="l" name="l" min="0" required>
+            <br><br>
+            <label for="d">Diameter:</label><br><br>
+            <input type="number" id="d" name="d" min="0" required>
+            <br><br>
+            <label for="h">Height:</label><br><br>
+            <input type="number" id="h" name="h" min="0" required>
+            <br><br>
+            <label for="w">Weight:</label><br><br>
+            <input type="number" id="w" name="w" min="0" required>
+            <br><br>
+            <label for="ww">shructed Weight:</label><br><br>
+            <input type="number" id="ww" name="ww" min="0" required>
+            <br><br>
+            <label for="vw">Viscera Weight:</label><br><br>
+            <input type="number" id="vw" name="vw" min="0" required>
+            <br><br>
+            <label for="Sex">Sex:</label><br><br>
+            <select id="Sex" name="Sex" required>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="0">Indeterminate</option>
+            </select>
+            <br><br>
+            <input type="submit" class="form-submit" value="Submit"> <!-- Fixed input type for the submit button -->
+        </form> <!-- Closed the form tag -->
+    </main>
+</body>
+</html>
